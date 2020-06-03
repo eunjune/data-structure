@@ -7,7 +7,7 @@ void init(ArrayList* arrayList)
 	arrayList->length = 0;
 }
 
-void insert(ArrayList* arrayList, size_t index, int data)
+void insert(ArrayList* arrayList, size_t index, LData data)
 {
 	size_t i;
 
@@ -34,30 +34,4 @@ void removeData(ArrayList* arrayList, size_t index)
 	{
 		arrayList->arr[i] = arrayList->arr[i + 1];
 	}
-}
-
-size_t findIndex(ArrayList* arrayList, int n)
-{
-	size_t i;
-
-	for (i = 0; i < arrayList->length; ++i)
-	{
-		if (arrayList->arr[i] == n)
-		{
-			return i;
-		}
-	}
-
-	return INVALID_INDEX;
-}
-
-void printArrayList(ArrayList* arrayList)
-{
-	size_t i;
-
-	for (i = 0; i < arrayList->length; ++i)
-	{
-		printf("%d ", arrayList->arr[i]);
-	}
-	printf("\n");
 }
