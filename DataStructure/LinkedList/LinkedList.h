@@ -1,31 +1,38 @@
 #ifndef LINKED_LIST
 #define LINKED_LIST
 
+#define TRUE 1
+#define FALSE 0
+
+typedef int LData;
+
 typedef struct node
 {
-	int data;
+	LData data;
 	struct node* next;
 } Node;
 
-void destroy(Node* head);
-void insert_front(Node** head, int n);
-void remove_node(Node** head, int n);
-Node* find_node(const Node* head, int n);
-void print_linked_list(const Node* head);
+typedef struct linkedList
+{
+	Node* head;
+	Node* cur;
+	Node* before;
+	int length;
+	int (*compare)(LData d1, LData d2);
+} List;
+
+void ListInit(List* plist);
+
+void LInsert(List* plist, LData data);
+
+int LFirst(List* plist, LData* pdata);
+
+int LNext(List* plist, LData* pdata);
+
+LData LRemove(List* plist);
+
+int LCount(const List* plist);
+
+void SetSortRule(List* plist, int (*comp)(LData d1, LData d2));
+
 #endif
-
-/*
-Node* head = NULL;
-
-	insert_front(&head, 5);
-	insert_front(&head, 3);
-	insert_front(&head, 2);
-
-	print_linked_list(head);
-
-	printf("%d\n", find_node(head,3)->data);
-
-	remove_node(&head, 3);
-
-	print_linked_list(head);
-*/

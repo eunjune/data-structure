@@ -147,14 +147,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ArrayList\ArrayList.c" />
-    <ClCompile Include="ArrayList\Point.c" />
     <ClCompile Include="LinkedList\LinkedList.c" />
-    <ClCompile Include="ArrayList\Main.c" />
+    <ClCompile Include="LinkedList\LinkedListMain.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArrayList\ArrayList.h" />
-    <ClInclude Include="ArrayList\Point.h" />
     <ClInclude Include="LinkedList\LinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

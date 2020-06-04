@@ -2,20 +2,29 @@
 
 #ifndef ARRAY_LIST
 #define ARRAY_LIST
-enum { MAX_LEN = 8};
-enum { INVALID_INDEX = -1};
+
+#define TRUE 1
+#define FALSE 0
+
+#define LIST_LEN 100
 
 //typedef int LData;
 typedef Point* LData;
 
-typedef struct ArrayList
+typedef struct Array
 {
-	LData arr[MAX_LEN];
-	size_t length;
-} ArrayList;
+	LData arr[LIST_LEN];
+	int length;
+	int curPosition;
+} Array;
 
-void init(ArrayList* arrayList);
-void insert(ArrayList* arrayList, size_t index, LData data);
-void removeData(ArrayList* arrayList, size_t index);
+void ListInit(Array* array);
+void LInsert(Array* array, LData data);
+
+int LFirst(Array* array, LData* pdata);
+int LNext(Array* array, LData* pdata);
+
+LData LRemove(Array* array);
+int LCount(Array* array);
 
 #endif

@@ -1,72 +1,115 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <assert.h>
 #include "LinkedList.h"
 
-void destroy(Node* head)
+void ListInit(List* plist)
 {
-	Node* p;
-
-	p = head;
-	while (p != NULL) {
-		Node* next = p->next;
-		free(p);
-		p = next;
-	}
+	plist->head = (Node*)malloc(sizeof(Node));
+	plist->head->next = NULL;
+	plist->length = 0;
+	plist->compare = NULL;
+	plist->before = plist->head;
+	plist->cur = plist->head;
 }
 
-void insert_front(Node** head, int n)
+void FInsert(List* plist, LData data)
 {
-	Node* node;
+	Node* newNode = (Node*)malloc(sizeof(Node));
+	newNode->data = data;
 
-	node = malloc(sizeof(Node));
-	node->data = n;
+	newNode->next = plist->head->next;
+	plist->head->next = newNode;
 
-	node->next = *head;
-	*head = node;
+	++plist->length;
 }
 
-
-void remove_node(Node** head, int n)
+void SInsert(List* plist, LData data)
 {
-	Node** pp;
+	Node* pred = plist->head;
+	Node* newNode = (Node*)malloc(sizeof(Node));
+	newNode->data = data;
 
-	pp = head;
-	while (*pp != NULL) {
-		if ((*pp)->data == n) {
-			Node* node = *pp;
-			*pp = (*pp)->next;
-			free(node);
+	while (pred->next != NULL)
+	{
+		if (plist->compare(newNode->data, pred->next->data) != 0)
+		{
 			break;
 		}
 
-		pp = &(*pp)->next;
+		pred = pred->next;
+	}
+
+	newNode->next = pred->next;
+	pred->next = newNode;
+	++plist->length;
+}
+
+void LInsert(List* plist, LData data)
+{
+	if (plist->compare == NULL)
+	{
+		FInsert(plist, data);
+	}
+	else
+	{
+		SInsert(plist, data);
 	}
 }
 
-Node* find_node(const Node* head, int n)
-{
-	Node* p;
 
-	p = head;
-	while (p != NULL) {
-		if (p->data == n) {
-			return p;
-		}
-		p = p->next;
+int LFirst(List* plist, LData* pdata)
+{
+	if (plist->head->next == NULL)
+	{
+		return FALSE;
 	}
 
-	return NULL;
+	plist->before = plist->head;
+	plist->cur = plist->head->next;
+	*pdata = plist->cur->data;
+
+	return TRUE;
 }
 
-void print_linked_list(const Node* head)
+int LNext(List* plist, LData* pdata)
 {
-	Node* p;
-
-	p = head;
-	while (p != NULL) {
-		printf("%d ", p->data);
-		p = p->next;
+	if (plist->cur->next == NULL)
+	{
+		return FALSE;
 	}
-	printf("\n");
 
+	plist->before = plist->cur;
+	plist->cur = plist->cur->next;
+	
+	*pdata = plist->cur->data;
+	return TRUE;
+}
+
+
+LData LRemove(List* plist)
+{
+	assert(plist->cur != plist->before != NULL);
+
+	Node* node = plist->cur;
+	LData data = node->data;
+
+	plist->before->next = plist->cur->next;
+	plist->cur = plist->before;
+
+	free(node);
+	--plist->length;
+
+	return data;
+}
+
+
+int LCount(const List* plist)
+{
+	return plist->length;
+}
+
+
+void SetSortRule(List* plist, int (*compare)(LData d1, LData d2))
+{
+	plist->compare = compare;
 }
