@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LinkedList\DoubleLinkedList.c" />
+    <ClCompile Include="LinkedList\DoubleLinkedListMain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LinkedList\DoubleLinkedList.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{F1A0A322-9197-4F30-982E-3DD10429D4D9}</ProjectGuid>
@@ -146,13 +153,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="LinkedList\CircleLinkedList.c" />
-    <ClCompile Include="LinkedList\CircleLinkedListMain.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="LinkedList\CircleLinkedList.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
