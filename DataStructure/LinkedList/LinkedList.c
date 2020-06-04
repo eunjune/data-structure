@@ -33,7 +33,7 @@ void SInsert(List* plist, LData data)
 	{
 		if (plist->compare(newNode->data, pred->next->data) != 0)
 		{
-			break;
+			break; 
 		}
 
 		pred = pred->next;

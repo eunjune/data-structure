@@ -147,11 +147,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList\LinkedList.c" />
-    <ClCompile Include="LinkedList\LinkedListMain.c" />
+    <ClCompile Include="LinkedList\CircleLinkedList.c" />
+    <ClCompile Include="LinkedList\CircleLinkedListMain.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkedList\LinkedList.h" />
+    <ClInclude Include="LinkedList\CircleLinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
