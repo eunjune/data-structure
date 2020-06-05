@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList\DoubleLinkedList.c" />
-    <ClCompile Include="LinkedList\DoubleLinkedListMain.c" />
+    <ClInclude Include="Stack\ArrayStack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkedList\DoubleLinkedList.h" />
+    <ClCompile Include="Stack\ArrayStack.c" />
+    <ClCompile Include="Stack\ArrayStackMain.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
