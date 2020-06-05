@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Stack\ArrayStack.h" />
+    <ClCompile Include="Stack\ListStack.c" />
+    <ClCompile Include="Stack\ListStackMain.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Stack\ArrayStack.c" />
-    <ClCompile Include="Stack\ArrayStackMain.c" />
+    <ClInclude Include="Stack\ListStack.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
