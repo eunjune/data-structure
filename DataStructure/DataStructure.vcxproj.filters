@@ -15,21 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Stack\ListStack.c">
+    <ClCompile Include="Queue\ListQueue.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Queue\CircularQueue.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Queue\CircularQueueMain.c">
+    <ClCompile Include="Queue\ListQueueMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Stack\ListStack.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Queue\CircularQueue.h">
+    <ClInclude Include="Queue\ListQueue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
