@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Queue\CircularQueue.c" />
+    <ClCompile Include="Queue\CircularQueueMain.c" />
     <ClCompile Include="Stack\ListStack.c" />
-    <ClCompile Include="Stack\ListStackMain.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Queue\CircularQueue.h" />
     <ClInclude Include="Stack\ListStack.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

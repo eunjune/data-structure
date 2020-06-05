@@ -18,12 +18,18 @@
     <ClCompile Include="Stack\ListStack.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Stack\ListStackMain.c">
+    <ClCompile Include="Queue\CircularQueue.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue\CircularQueueMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Stack\ListStack.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue\CircularQueue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
