@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Queue\ListQueue.c" />
-    <ClCompile Include="Queue\ListQueueMain.c" />
+    <ClInclude Include="Tree\BinaryTree.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Queue\ListQueue.h" />
+    <ClCompile Include="Tree\BinaryTree.c" />
+    <ClCompile Include="Tree\BinaryTreeMain.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
