@@ -19,11 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Tree\BinaryTree.h" />
+    <ClInclude Include="Hash\Person.h" />
+    <ClInclude Include="Hash\Slot.h" />
+    <ClInclude Include="Hash\Table.h" />
+    <ClInclude Include="LinkedList\LinkedList.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Tree\BinaryTree.c" />
-    <ClCompile Include="Tree\BinaryTreeMain.c" />
+    <ClCompile Include="Hash\ChainedTable.c" />
+    <ClCompile Include="Hash\ChainedTableMain.c" />
+    <ClCompile Include="Hash\Person.c" />
+    <ClCompile Include="LinkedList\LinkedList.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

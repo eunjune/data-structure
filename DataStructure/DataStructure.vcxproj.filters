@@ -15,15 +15,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Tree\BinaryTree.h">
+    <ClInclude Include="Hash\Person.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\Slot.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash\Table.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList\LinkedList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Tree\BinaryTree.c">
+    <ClCompile Include="Hash\Person.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Tree\BinaryTreeMain.c">
+    <ClCompile Include="Hash\ChainedTableMain.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash\ChainedTable.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList\LinkedList.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

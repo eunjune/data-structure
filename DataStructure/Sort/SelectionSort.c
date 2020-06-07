@@ -12,7 +12,7 @@ void SelectioSort(int arr[], int n)
 		select = i;
 		for (j = i + 1; j < n; ++j)
 		{
-			if (select == -1 || arr[select] > arr[j])
+			if (arr[select] > arr[j])
 			{
 				select = j;
 			}
