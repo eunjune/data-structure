@@ -21,7 +21,7 @@ int main(void)
 	np = MakePersonData(900254, "Lee", "Seoul");
 	TBLInsert(&myTbl, GetSSN(np), np);
 
-	np = MakePersonData(900254, "KIM", "Jeju");
+	np = MakePersonData(900139, "KIM", "Jeju");
 	TBLInsert(&myTbl, GetSSN(np), np);
 
 	np = MakePersonData(900827, "HAN", "Kangwon");

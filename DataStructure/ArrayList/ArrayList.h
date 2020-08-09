@@ -1,4 +1,4 @@
-#include "Point.h"
+#include "NameCard.h"
 
 #ifndef ARRAY_LIST
 #define ARRAY_LIST
@@ -9,7 +9,8 @@
 #define LIST_LEN 100
 
 //typedef int LData;
-typedef Point* LData;
+//typedef Point* LData;
+typedef NameCard* LData;
 
 typedef struct Array
 {
@@ -24,7 +25,7 @@ void LInsert(Array* array, LData data);
 int LFirst(Array* array, LData* pdata);
 int LNext(Array* array, LData* pdata);
 
-LData LRemove(Array* array);
+LData LRemove(Array* array); // free гр ╟м
 int LCount(Array* array);
 
 #endif

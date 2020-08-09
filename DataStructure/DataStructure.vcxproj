@@ -19,16 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Hash\Person.h" />
-    <ClInclude Include="Hash\Slot.h" />
-    <ClInclude Include="Hash\Table.h" />
-    <ClInclude Include="LinkedList\LinkedList.h" />
+    <ClCompile Include="ArrayList\ArrayList.c" />
+    <ClCompile Include="ArrayList\NameCard.c" />
+    <ClCompile Include="ArrayList\NameCardMain.c" />
+    <ClCompile Include="ArrayList\Point.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Hash\ChainedTable.c" />
-    <ClCompile Include="Hash\ChainedTableMain.c" />
-    <ClCompile Include="Hash\Person.c" />
-    <ClCompile Include="LinkedList\LinkedList.c" />
+    <ClInclude Include="ArrayList\ArrayList.h" />
+    <ClInclude Include="ArrayList\NameCard.h" />
+    <ClInclude Include="ArrayList\Point.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -19,11 +19,11 @@ void TBLInsert(Table* pt, Key k, Value v)
 	int hashCode = pt->hf(k);
 	Slot slot = { k, v };
 
-	/*if (TBLSearch(pt, k) != NULL)
+	if (TBLSearch(pt, k) != NULL)
 	{
 		printf("키 중복 오류 발생 \n");
 		return;
-	}*/
+	}
 
 	LInsert(&(pt->tbl[hashCode]), slot);
 }

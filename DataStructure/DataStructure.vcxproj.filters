@@ -15,31 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Hash\Person.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Hash\Slot.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Hash\Table.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="LinkedList\LinkedList.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
+    <ClCompile Include="ArrayList\ArrayList.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayList\Point.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayList\NameCard.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayList\NameCardMain.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Hash\Person.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Hash\ChainedTableMain.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Hash\ChainedTable.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="LinkedList\LinkedList.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+    <ClInclude Include="ArrayList\ArrayList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayList\Point.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayList\NameCard.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
