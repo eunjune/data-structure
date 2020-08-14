@@ -18,12 +18,18 @@
     <ClCompile Include="LinkedList\LinkedList.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedList\DLinkedRead.c">
+    <ClCompile Include="LinkedList\PointLinkedListMain.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList\Point.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkedList\LinkedList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList\Point.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

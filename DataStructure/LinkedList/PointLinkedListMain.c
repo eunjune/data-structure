@@ -4,6 +4,16 @@
 #include <stdio.h>
 #include "LinkedList.h"
 
+int compareSort(Point* p1, Point* p2)
+{
+	if (p1->x == p2->x)
+	{
+		return p1->y < p2->y;
+	}
+
+	return p1->x < p2->x;
+}
+
 int main()
 {
 	List list;
@@ -12,21 +22,24 @@ int main()
 
 	ListInit(&list);
 
+
+	SetSortRule(&list, compareSort);
+
 	ppos = (Point*)malloc(sizeof(Point));
 	set(ppos, 2, 1);
-	LInsert(&list, ppos);
+	SInsert(&list, ppos);
 
 	ppos = (Point*)malloc(sizeof(Point));
 	set(ppos, 2, 2);
-	LInsert(&list, ppos);
+	SInsert(&list, ppos);
 
 	ppos = (Point*)malloc(sizeof(Point));
 	set(ppos, 3, 1);
-	LInsert(&list, ppos);
+	SInsert(&list, ppos);
 
 	ppos = (Point*)malloc(sizeof(Point));
 	set(ppos, 3, 2);
-	LInsert(&list, ppos);
+	SInsert(&list, ppos);
 
 	printf("현재 데이터의 수: %d \n", LCount(&list));
 
