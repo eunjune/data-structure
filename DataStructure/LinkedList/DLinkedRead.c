@@ -9,8 +9,9 @@ typedef struct _node
 
 int main(void)
 {
-	Node* head = NULL;
-	Node* tail = NULL;
+	Node* dummy = (Node*)malloc(sizeof(Node));
+	Node* head = dummy;
+	Node* tail = dummy;
 	Node* cur = NULL;
 
 	Node* newNode = NULL;
@@ -27,33 +28,21 @@ int main(void)
 		newNode->data = readData;
 		newNode->next = NULL;
 
-		if (head == NULL)
-			tail = newNode;
-		else
-			newNode->next = head;
-
-		head = newNode;
-
-		/*if (head == NULL)
-			head = newNode;
-		else
-			tail->next = newNode;
-
-		tail = newNode;*/
+		tail->next = newNode;
+		tail = newNode;
 
 	}
 
 	printf("\n");
 
 	printf("입력 받은 데이터의 전체출력! \n");
-	if (head == NULL)
+	if (head == tail)
 	{
 		printf("지정된자연수가 존재하지 않습니다.\n");
 	}
 	else
 	{
 		cur = head;
-		printf("%d ", cur->data);
 
 		while (cur->next != NULL)
 		{
@@ -63,7 +52,7 @@ int main(void)
 	}
 	printf("\n");
 
-	if (head == NULL)
+	if (head == tail)
 	{
 		return 0;
 	}
@@ -71,9 +60,6 @@ int main(void)
 	{
 		Node* delNode = head;
 		Node* delNextNode = head->next;
-
-		printf("%d를 삭제합니다. \n", head->data);
-		free(delNode);
 
 		while (delNextNode != NULL)
 		{
