@@ -1,13 +1,14 @@
 #ifndef LINKED_LIST
 #define LINKED_LIST
 
-#include "../Hash/Slot.h"
+#include "Point.h"
 
 #define TRUE 1
 #define FALSE 0
 
-typedef Slot LData;
+//typedef Slot LData;
 //typedef int LData;
+typedef Point* LData;
 
 typedef struct node
 {

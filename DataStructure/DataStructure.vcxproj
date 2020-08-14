@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList\LinkedRead.c" />
+    <ClCompile Include="LinkedList\DLinkedRead.c" />
+    <ClCompile Include="LinkedList\LinkedList.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LinkedList\LinkedList.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
