@@ -15,21 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList\LinkedList.c">
+    <ClCompile Include="LinkedList\CircleLinkedList.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedList\PointLinkedListMain.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="LinkedList\Point.c">
+    <ClCompile Include="LinkedList\NightDutyMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkedList\LinkedList.h">
+    <ClInclude Include="LinkedList\CircleLinkedList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedList\Point.h">
+    <ClInclude Include="LinkedList\Employee.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,10 +1,13 @@
 #ifndef CIRCLE_LINKED_LIST
 #define CIRCLE_LINKED_LIST
 
+#include "Employee.h"
+
 #define TRUE 1
 #define FALSE 0
 
-typedef int Data;
+//typedef int Data;
+typedef Employee* Data;
 
 typedef struct node
 {

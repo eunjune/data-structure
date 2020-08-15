@@ -19,13 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList\LinkedList.c" />
-    <ClCompile Include="LinkedList\Point.c" />
-    <ClCompile Include="LinkedList\PointLinkedListMain.c" />
+    <ClCompile Include="LinkedList\NightDutyMain.c" />
+    <ClCompile Include="LinkedList\CircleLinkedList.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkedList\LinkedList.h" />
-    <ClInclude Include="LinkedList\Point.h" />
+    <ClInclude Include="LinkedList\CircleLinkedList.h" />
+    <ClInclude Include="LinkedList\Employee.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
