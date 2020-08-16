@@ -6,8 +6,8 @@
 #define TRUE 1
 #define FALSE 0
 
-//typedef int Data;
-typedef Employee* Data;
+typedef int Data;
+//typedef Employee* Data;
 
 typedef struct node
 {

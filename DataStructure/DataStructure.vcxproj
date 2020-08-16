@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkedList\DBDLinkedList.h" />
+    <ClCompile Include="LinkedList\CircleLinkedList.c" />
+    <ClCompile Include="Stack\CLLBaseStack.c" />
+    <ClCompile Include="Stack\CLLBaseStackMain.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList\DBDLinkedList.c" />
-    <ClCompile Include="LinkedList\DBDLinkedListMain.c" />
+    <ClInclude Include="LinkedList\CircleLinkedList.h" />
+    <ClInclude Include="Stack\CLLBaseStack.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
