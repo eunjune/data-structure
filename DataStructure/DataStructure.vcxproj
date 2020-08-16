@@ -19,13 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList\CircleLinkedList.c" />
-    <ClCompile Include="Stack\CLLBaseStack.c" />
-    <ClCompile Include="Stack\CLLBaseStackMain.c" />
+    <ClInclude Include="Stack\caculator\InfixCalculator.h" />
+    <ClInclude Include="Stack\caculator\InfixToPostfix.h" />
+    <ClInclude Include="Stack\caculator\PostCalculator.h" />
+    <ClInclude Include="Stack\ListStack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkedList\CircleLinkedList.h" />
-    <ClInclude Include="Stack\CLLBaseStack.h" />
+    <ClCompile Include="Stack\caculator\InfixCalculator.c" />
+    <ClCompile Include="Stack\caculator\InfixCalculatorMain.c" />
+    <ClCompile Include="Stack\caculator\InfixToPostfix.c" />
+    <ClCompile Include="Stack\caculator\PostCalculator.c" />
+    <ClCompile Include="Stack\ListStack.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
