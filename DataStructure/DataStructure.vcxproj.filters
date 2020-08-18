@@ -15,34 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Stack\caculator\PostCalculator.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Stack\ListStack.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Stack\caculator\InfixCalculator.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Stack\caculator\InfixToPostfix.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
+    <ClCompile Include="Queue\CircularQueue.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue\HamburgerSim.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Stack\caculator\PostCalculator.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Stack\ListStack.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Stack\caculator\InfixCalculator.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Stack\caculator\InfixToPostfix.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Stack\caculator\InfixCalculatorMain.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+    <ClInclude Include="Queue\CircularQueue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

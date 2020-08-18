@@ -19,17 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Stack\caculator\InfixCalculator.h" />
-    <ClInclude Include="Stack\caculator\InfixToPostfix.h" />
-    <ClInclude Include="Stack\caculator\PostCalculator.h" />
-    <ClInclude Include="Stack\ListStack.h" />
+    <ClCompile Include="Queue\CircularQueue.c" />
+    <ClCompile Include="Queue\HamburgerSim.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Stack\caculator\InfixCalculator.c" />
-    <ClCompile Include="Stack\caculator\InfixCalculatorMain.c" />
-    <ClCompile Include="Stack\caculator\InfixToPostfix.c" />
-    <ClCompile Include="Stack\caculator\PostCalculator.c" />
-    <ClCompile Include="Stack\ListStack.c" />
+    <ClInclude Include="Queue\CircularQueue.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
