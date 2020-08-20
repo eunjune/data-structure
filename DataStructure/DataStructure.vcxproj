@@ -19,13 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Queue\Deque.c" />
-    <ClCompile Include="Queue\DequeBaseQueue.c" />
-    <ClCompile Include="Queue\DequeBaseQueueMain.c" />
+    <ClCompile Include="Stack\ListStack.c" />
+    <ClCompile Include="Tree\BinaryTree.c" />
+    <ClCompile Include="Tree\Expression\ExpressionMain.c" />
+    <ClCompile Include="Tree\Expression\ExpressionTree.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Queue\Deque.h" />
-    <ClInclude Include="Queue\DequeBaseQueue.h" />
+    <ClInclude Include="Stack\ListStack.h" />
+    <ClInclude Include="Tree\BinaryTree.h" />
+    <ClInclude Include="Tree\Expression\ExpressionTree.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

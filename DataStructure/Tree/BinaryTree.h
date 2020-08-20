@@ -6,11 +6,11 @@
 
 typedef int BTData;
 
-typedef struct node
+typedef struct _BTreeNode
 {
 	BTData data;
-	struct node* left;
-	struct node* right;
+	struct _BTreeNode* left;
+	struct _BTreeNode* right;
 } BTreeNode;
 
 BTreeNode* MakeBTreeNode(void);
@@ -24,7 +24,11 @@ BTreeNode* GetRightSubTree(BTreeNode* bt);
 void MakeLeftSubTree(BTreeNode* main, BTreeNode* sub);
 void MakeRightSubTree(BTreeNode* main, BTreeNode* sub);
 
-void PreorderTraverse(BTreeNode* bt);
-void InorderTraverse(BTreeNode* bt);
-void PostorderTraverse(BTreeNode* bt);
+typedef void VisitFuncPtr(BTData data);
+
+void PreorderTraverse(BTreeNode* bt, VisitFuncPtr action);
+void InorderTraverse(BTreeNode* bt, VisitFuncPtr action);
+void PostorderTraverse(BTreeNode* bt, VisitFuncPtr action);
+
+void DeleteTree(BTreeNode* bt);
 #endif

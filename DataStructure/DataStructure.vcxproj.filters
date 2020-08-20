@@ -15,21 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Queue\Deque.c">
+    <ClCompile Include="Tree\BinaryTree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Queue\DequeBaseQueueMain.c">
+    <ClCompile Include="Tree\Expression\ExpressionMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Queue\DequeBaseQueue.c">
+    <ClCompile Include="Tree\Expression\ExpressionTree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack\ListStack.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Queue\Deque.h">
+    <ClInclude Include="Tree\BinaryTree.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Queue\DequeBaseQueue.h">
+    <ClInclude Include="Tree\Expression\ExpressionTree.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack\ListStack.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

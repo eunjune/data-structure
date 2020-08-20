@@ -1,10 +1,13 @@
 #ifndef LIST_STACK
 #define LIST_STACK
 
+#include "../Tree/BinaryTree.h"
+
 #define TRUE 1
 #define FALSE 0
 
-typedef int Data;
+//typedef int Data;
+typedef BTreeNode* Data;
 
 typedef struct node
 {

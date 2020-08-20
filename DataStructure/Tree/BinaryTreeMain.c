@@ -22,5 +22,7 @@ int main(void)
 	printf("%d \n",
 		GetData(GetLeftSubTree(GetLeftSubTree(bt1))));
 
+	DeleteTree(bt1);
+
 	return 0;
 }
