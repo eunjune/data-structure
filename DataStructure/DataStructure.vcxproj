@@ -19,12 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PriorityQueue\SimpleHeap.c" />
-    <ClCompile Include="PriorityQueue\SimpleHeapMain.c" />
+    <ClCompile Include="PriorityQueue\UesfulHeap.c" />
+    <ClCompile Include="PriorityQueue\UesfulHeapMain.c" />
     <ClCompile Include="Stack\ListStack.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PriorityQueue\SimpleHeap.h" />
+    <ClInclude Include="PriorityQueue\UsefulHeap.h" />
     <ClInclude Include="Stack\ListStack.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

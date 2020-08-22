@@ -18,10 +18,10 @@
     <ClCompile Include="Stack\ListStack.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="PriorityQueue\SimpleHeapMain.c">
+    <ClCompile Include="PriorityQueue\UesfulHeap.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="PriorityQueue\SimpleHeap.c">
+    <ClCompile Include="PriorityQueue\UesfulHeapMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +29,7 @@
     <ClInclude Include="Stack\ListStack.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="PriorityQueue\SimpleHeap.h">
+    <ClInclude Include="PriorityQueue\UsefulHeap.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
