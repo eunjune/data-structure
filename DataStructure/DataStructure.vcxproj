@@ -19,15 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="PriorityQueue\SimpleHeap.c" />
+    <ClCompile Include="PriorityQueue\SimpleHeapMain.c" />
     <ClCompile Include="Stack\ListStack.c" />
-    <ClCompile Include="Tree\BinaryTree.c" />
-    <ClCompile Include="Tree\Expression\ExpressionMain.c" />
-    <ClCompile Include="Tree\Expression\ExpressionTree.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PriorityQueue\SimpleHeap.h" />
     <ClInclude Include="Stack\ListStack.h" />
-    <ClInclude Include="Tree\BinaryTree.h" />
-    <ClInclude Include="Tree\Expression\ExpressionTree.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
