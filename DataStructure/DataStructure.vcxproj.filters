@@ -21,7 +21,10 @@
     <ClCompile Include="PriorityQueue\UesfulHeap.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="PriorityQueue\UesfulHeapMain.c">
+    <ClCompile Include="PriorityQueue\PriorityQueue.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PriorityQueue\PQStringMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +33,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="PriorityQueue\UsefulHeap.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PriorityQueue\PriorityQueue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -25,7 +25,7 @@ void HInsert(Heap* ph, HData data)
 	while (idx != 1)
 	{
 
-		if (ph->comp(data, ph->heapArr[GetParentIDX(idx)]) <= 0)
+		if (ph->comp(data, ph->heapArr[GetParentIDX(idx)]) >= 0)
 		{
 			break;
 		}
@@ -50,7 +50,7 @@ HData HDelete(Heap* ph)
 
 	while (childIdx = GetHiPriChildIDX(ph, parentIdx))
 	{
-		if (ph->comp(lastElem, ph->heapArr[childIdx]) >= 0)
+		if (ph->comp(lastElem, ph->heapArr[childIdx]) <= 0)
 		{
 			break;
 		}
@@ -92,7 +92,7 @@ int GetHiPriChildIDX(Heap* ph, int idx)
 		return GetLChildIDX(idx);
 	}
 
-	if (ph->comp(ph->heapArr[GetLChildIDX(idx)], ph->heapArr[GetRChildIDX(idx)]) < 0)
+	if (ph->comp(ph->heapArr[GetLChildIDX(idx)], ph->heapArr[GetRChildIDX(idx)]) > 0)
 	{
 		return GetRChildIDX(idx);
 	}
