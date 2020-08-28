@@ -19,13 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PriorityQueue\PQStringMain.c" />
-    <ClCompile Include="PriorityQueue\PriorityQueue.c" />
     <ClCompile Include="PriorityQueue\UesfulHeap.c" />
+    <ClCompile Include="Sort\HeapSort.c" />
     <ClCompile Include="Stack\ListStack.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PriorityQueue\PriorityQueue.h" />
     <ClInclude Include="PriorityQueue\UsefulHeap.h" />
     <ClInclude Include="Stack\ListStack.h" />
   </ItemGroup>
