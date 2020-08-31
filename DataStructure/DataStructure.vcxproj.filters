@@ -21,7 +21,7 @@
     <ClCompile Include="PriorityQueue\UesfulHeap.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sort\MergeSort.c">
+    <ClCompile Include="Sort\QuickSort.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

@@ -20,7 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PriorityQueue\UesfulHeap.c" />
-    <ClCompile Include="Sort\MergeSort.c" />
+    <ClCompile Include="Sort\QuickSort.c" />
     <ClCompile Include="Stack\ListStack.c" />
   </ItemGroup>
   <ItemGroup>
