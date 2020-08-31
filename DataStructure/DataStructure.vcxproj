@@ -19,15 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PriorityQueue\UesfulHeap.c" />
-    <ClCompile Include="Queue\ListQueue.c" />
-    <ClCompile Include="Search\InterpolSearch.c" />
-    <ClCompile Include="Stack\ListStack.c" />
+    <ClInclude Include="PriorityQueue\UsefulHeap.h" />
+    <ClInclude Include="Search\BinarySearchTree.h" />
+    <ClInclude Include="Tree\BinaryTree.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PriorityQueue\UsefulHeap.h" />
-    <ClInclude Include="Queue\ListQueue.h" />
-    <ClInclude Include="Stack\ListStack.h" />
+    <ClCompile Include="Search\BinarySearchTree.c" />
+    <ClCompile Include="Search\BinarySearchTreeDelMain.c" />
+    <ClCompile Include="Tree\BinaryTree.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

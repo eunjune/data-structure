@@ -20,7 +20,6 @@ void SetData(BTreeNode* bt, BTData data);
 BTreeNode* GetLeftSubTree(BTreeNode* bt);
 BTreeNode* GetRightSubTree(BTreeNode* bt);
 
-
 void MakeLeftSubTree(BTreeNode* main, BTreeNode* sub);
 void MakeRightSubTree(BTreeNode* main, BTreeNode* sub);
 
@@ -29,6 +28,12 @@ typedef void VisitFuncPtr(BTData data);
 void PreorderTraverse(BTreeNode* bt, VisitFuncPtr action);
 void InorderTraverse(BTreeNode* bt, VisitFuncPtr action);
 void PostorderTraverse(BTreeNode* bt, VisitFuncPtr action);
+
+BTreeNode* RemoveLeftSubTree(BTreeNode* bt);
+BTreeNode* RemoveRightSubTree(BTreeNode* bt);
+
+void ChangeLeftSubTree(BTreeNode* main, BTreeNode* sub);
+void ChangeRightSubTree(BTreeNode* main, BTreeNode* sub);
 
 void DeleteTree(BTreeNode* bt);
 #endif

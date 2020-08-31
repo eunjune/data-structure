@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <assert.h>
 #include "BinaryTree.h"
 
@@ -83,6 +84,42 @@ void PostorderTraverse(BTreeNode* bt, VisitFuncPtr action)
 	PostorderTraverse(bt->left, action);
 	PostorderTraverse(bt->right, action);
 	action(bt->data);
+}
+
+BTreeNode* RemoveLeftSubTree(BTreeNode* bt)
+{
+	BTreeNode* delNode = NULL;
+
+	if (bt != NULL)
+	{
+		delNode = bt->left;
+		bt->left = NULL;
+	}
+
+	return delNode;
+}
+
+BTreeNode* RemoveRightSubTree(BTreeNode* bt)
+{
+	BTreeNode* delNode = NULL;
+
+	if (bt != NULL)
+	{
+		delNode = bt->right;
+		bt->right = NULL;
+	}
+
+	return delNode;
+}
+
+void ChangeLeftSubTree(BTreeNode* main, BTreeNode* sub)
+{
+	main->left = sub;
+}
+
+void ChangeRightSubTree(BTreeNode* main, BTreeNode* sub)
+{
+	main->right = sub;
 }
 
 void DeleteTree(BTreeNode* bt)
