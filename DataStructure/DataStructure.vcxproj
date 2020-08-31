@@ -19,14 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Graph\ALGraph.h" />
+    <ClInclude Include="Graph\DFS.h" />
     <ClInclude Include="LinkedList\DoubleLinkedList.h" />
     <ClInclude Include="PriorityQueue\UsefulHeap.h" />
+    <ClInclude Include="Stack\ArrayStack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Graph\ALGraph.c" />
-    <ClCompile Include="Graph\ALGraphMain.c" />
+    <ClCompile Include="Graph\DFS.c" />
+    <ClCompile Include="Graph\DFSMain.c" />
     <ClCompile Include="LinkedList\DoubleLinkedList.c" />
+    <ClCompile Include="Stack\ArrayStack.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

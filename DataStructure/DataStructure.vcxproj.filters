@@ -18,10 +18,13 @@
     <ClInclude Include="PriorityQueue\UsefulHeap.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Graph\ALGraph.h">
+    <ClInclude Include="LinkedList\DoubleLinkedList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedList\DoubleLinkedList.h">
+    <ClInclude Include="Graph\DFS.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack\ArrayStack.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -29,10 +32,13 @@
     <ClCompile Include="LinkedList\DoubleLinkedList.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Graph\ALGraphMain.c">
+    <ClCompile Include="Graph\DFS.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Graph\ALGraph.c">
+    <ClCompile Include="Graph\DFSMain.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack\ArrayStack.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
