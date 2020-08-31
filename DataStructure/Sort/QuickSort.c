@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-
-
 void Swap(int arr[], int idx1, int idx2)
 {
 	int temp = arr[idx1];

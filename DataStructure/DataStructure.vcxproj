@@ -20,11 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PriorityQueue\UesfulHeap.c" />
-    <ClCompile Include="Sort\QuickSort.c" />
+    <ClCompile Include="Queue\ListQueue.c" />
+    <ClCompile Include="Sort\RadixSort.c" />
     <ClCompile Include="Stack\ListStack.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PriorityQueue\UsefulHeap.h" />
+    <ClInclude Include="Queue\ListQueue.h" />
     <ClInclude Include="Stack\ListStack.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
