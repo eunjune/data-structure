@@ -16,7 +16,7 @@ int getMid(int arr[], int left, int right)
 		Swap(samples, 0, 1);
 	}
 
-	if (arr[samples[1] > arr[samples[2]]])
+	if (arr[samples[1]] > arr[samples[2]])
 	{
 		Swap(samples, 1, 2);
 	}
@@ -31,14 +31,16 @@ int getMid(int arr[], int left, int right)
 
 int Partition(int arr[], int left, int right)
 {
+
+	int low = left + 1;
+	int high = right;
 	
 	int pIdx = getMid(arr, left, right);
 	int pivot = arr[pIdx];
 
-	int low = left+1;
-	int high = right;
-
 	Swap(arr, left, pIdx);
+
+	//int pivot = arr[left];
 
 	printf("ÇÇ¹þ: %d \n", pivot);
 
@@ -77,7 +79,8 @@ void QuickSort(int arr[], int left, int right)
 
 int main(void)
 {
-	int arr[15] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 };
+	int arr[15] = {15,14,13,12,11,10,9,8,7,6,5,4,3,2,1};
+	//int arr[15] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 };
 	//int arr[7] = { 3,2,4,1,7,6,5 };
 	//int arr[3] = { 3,3,3 };
 

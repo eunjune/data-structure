@@ -21,10 +21,10 @@
     <ClCompile Include="PriorityQueue\UesfulHeap.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sort\RadixSort.c">
+    <ClCompile Include="Queue\ListQueue.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Queue\ListQueue.c">
+    <ClCompile Include="Search\InterpolSearch.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

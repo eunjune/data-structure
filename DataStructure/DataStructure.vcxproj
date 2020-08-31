@@ -21,7 +21,7 @@
   <ItemGroup>
     <ClCompile Include="PriorityQueue\UesfulHeap.c" />
     <ClCompile Include="Queue\ListQueue.c" />
-    <ClCompile Include="Sort\RadixSort.c" />
+    <ClCompile Include="Search\InterpolSearch.c" />
     <ClCompile Include="Stack\ListStack.c" />
   </ItemGroup>
   <ItemGroup>
