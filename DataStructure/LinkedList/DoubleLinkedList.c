@@ -66,12 +66,17 @@ int LPrevious(List* plist, LData* pdata)
 }
 
 
-LData LRemove(List* plist)
-{
-	
-}
+//LData LRemove(List* plist)
+//{
+//	
+//}
 
 int LCount(const List* plist)
 {
 	return plist->length;
+}
+
+void SetSortRule(List* plist, int (*compare)(LData d1, LData d2))
+{
+	plist->compare = compare;
 }

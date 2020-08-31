@@ -19,14 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Graph\ALGraph.h" />
+    <ClInclude Include="LinkedList\DoubleLinkedList.h" />
     <ClInclude Include="PriorityQueue\UsefulHeap.h" />
-    <ClInclude Include="Search\BinarySearchTree.h" />
-    <ClInclude Include="Tree\BinaryTree.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Search\BinarySearchTree.c" />
-    <ClCompile Include="Search\BinarySearchTreeDelMain.c" />
-    <ClCompile Include="Tree\BinaryTree.c" />
+    <ClCompile Include="Graph\ALGraph.c" />
+    <ClCompile Include="Graph\ALGraphMain.c" />
+    <ClCompile Include="LinkedList\DoubleLinkedList.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

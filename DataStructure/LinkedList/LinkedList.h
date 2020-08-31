@@ -7,8 +7,8 @@
 #define FALSE 0
 
 //typedef Slot LData;
-//typedef int LData;
-typedef Point* LData;
+typedef int LData;
+//typedef Point* LData;
 
 typedef struct node
 {

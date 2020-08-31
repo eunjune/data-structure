@@ -18,6 +18,7 @@ typedef struct linkedList
 	Node* head;
 	Node* cur;
 	int length;
+	int (*compare)(LData d1, LData d2);
 } List;
 
 void ListInit(List* plist);
@@ -32,5 +33,7 @@ int LPrevious(List* plist, LData* pdata);
 LData LRemove(List* plist);
 
 int LCount(const List* plist);
+
+void SetSortRule(List* plist, int (*comp)(LData d1, LData d2));
 
 #endif

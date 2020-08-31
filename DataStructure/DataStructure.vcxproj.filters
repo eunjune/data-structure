@@ -18,21 +18,21 @@
     <ClInclude Include="PriorityQueue\UsefulHeap.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Search\BinarySearchTree.h">
+    <ClInclude Include="Graph\ALGraph.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Tree\BinaryTree.h">
+    <ClInclude Include="LinkedList\DoubleLinkedList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Search\BinarySearchTree.c">
+    <ClCompile Include="LinkedList\DoubleLinkedList.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Tree\BinaryTree.c">
+    <ClCompile Include="Graph\ALGraphMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Search\BinarySearchTreeDelMain.c">
+    <ClCompile Include="Graph\ALGraph.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

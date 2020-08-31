@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "Table.h"
 
-
 void TBLInit(Table* pt, HashFunc* f)
 {
 	size_t i;
