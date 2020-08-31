@@ -19,15 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Graph\DFS.h" />
+    <ClInclude Include="Graph\BFS.h" />
     <ClInclude Include="LinkedList\DoubleLinkedList.h" />
     <ClInclude Include="PriorityQueue\UsefulHeap.h" />
+    <ClInclude Include="Queue\CircularQueue.h" />
     <ClInclude Include="Stack\ArrayStack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Graph\DFS.c" />
-    <ClCompile Include="Graph\DFSMain.c" />
+    <ClCompile Include="Graph\BFS.c" />
+    <ClCompile Include="Graph\BFSMain.c" />
     <ClCompile Include="LinkedList\DoubleLinkedList.c" />
+    <ClCompile Include="Queue\CircularQueue.c" />
     <ClCompile Include="Stack\ArrayStack.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -21,10 +21,13 @@
     <ClInclude Include="LinkedList\DoubleLinkedList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Graph\DFS.h">
+    <ClInclude Include="Stack\ArrayStack.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Stack\ArrayStack.h">
+    <ClInclude Include="Graph\BFS.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue\CircularQueue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -32,13 +35,16 @@
     <ClCompile Include="LinkedList\DoubleLinkedList.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Graph\DFS.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Graph\DFSMain.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Stack\ArrayStack.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph\BFS.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph\BFSMain.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue\CircularQueue.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
